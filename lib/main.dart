@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_coupon_ui/coupon_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +25,11 @@ class CouponPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      backgroundColor: Colors.grey,
+      body: Center(
+        child: CouponWidget(),
+      ),
+    );
   }
 }
